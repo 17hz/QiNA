@@ -1,0 +1,88 @@
+.posB {
+    width: 380px;
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    height: 600px;
+}
+
+.content {
+    text-align: center;
+    font-size: 12px;
+    h5 {
+        font-weight: 800;
+        margin-top: 0.8em !important;
+        margin-bottom: 0.2em !important;
+    }
+    p {
+        margin-bottom: 0.1em !important;
+    }
+}
+
+.AboutControl {
+    position: absolute;
+    bottom: 12px;
+    width: 380px;
+    left: 0;
+    text-align: center;
+    p {
+        font-size: 10px;
+        margin-top: 1em;
+        color: #aaa;
+    }
+}
+
+hr {
+    background-color: #eee;
+}
+.Link {
+    text-decoration: underline;
+}
+
+.Done {
+    input {
+        text-align: center;
+        background: none;
+        border: none;
+        box-shadow: none;
+        background-color: RGB(52, 119, 217);
+        color: #fff;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+        border-radius: 4px;
+        font-size: 12px;
+    }
+}
+
+.FileBox {
+    width: 380px;
+    text-align: left;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid RGB(52, 119, 217);
+    height: 42px;
+    position: relative;
+    svg {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    span {
+        padding-left: 32px;
+        padding-right: 8px;
+        line-height: 42px;
+        font-size: 12px;
+    }
+    span.leftText {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 310px;
+    }
+    .is-pulled-right {
+        span {
+            font-weight: 800;
+            color: RGB(54, 122, 214);
+        }
+    }
+}

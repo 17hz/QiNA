@@ -1,3 +1,5 @@
+
+@import "../style/_base.scss";
 #Uploader {
   text-align: center;
   height: 440px;
@@ -12,7 +14,36 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.ContentArea {
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.inBox {
+  height: 204px;
+  width: 204px;
+  background: #FFFFFF;
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  .inBox-icon {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      margin-left: -50px;
+      bottom: -8px;
+      background-image: url("./MainView/assets/inBox.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+}
 .control {
   text-align: center;
   position: absolute;
@@ -23,14 +54,65 @@
     width: 128px;
   }
 
-  .button {
+  button {
+    width:100px;
     height: 38px;
     font-size: 12px;
     font-weight: 800;
     border-radius: 4px;
+    margin-top: 10px
   }
 
   .button.is-info.is-outlined {
     background-color: #fff;
   }
+}
+
+.Draging {
+  position: absolute;
+  left: 50%;
+  top: 210px;
+  margin-left: -102px;
+  z-index: 5000;
+  height: 206px;
+  width: 206px;
+  background: rbga(0,0,0,0);
+  border-radius: 50%;
+  animation: Rotate 10000ms infinite linear;
+  border: 4px dashed #D2E7FD;
+}
+
+@-webkit-keyframes Rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
+.TextArea {
+  position: absolute;
+  top: 456px;
+  width: 380px;
+  text-align: center;
+  font-size: 12px;
+  color: #4990E2;
+  .t {
+      font-weight: 800;
+      color: #3477D9;
+  }
+}
+
+.p-btn {
+  background-color: $highlight;
+  border-color: $highlight
+}
+.d-btn {
+  color: $highlight;
+  border-color: $highlight;
+}
+
+.Uploading {
+  box-shadow: 0 24px 32px 0 rgba(52, 119, 217,0.24);
 }

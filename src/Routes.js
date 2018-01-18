@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link,Switch,Redirect} from "react-router-dom";
+import {Route,Switch,Redirect} from "react-router-dom";
 import MainView from './components/MainView';
 import About from './components/About';
+import DoneView from './components/Done';
 import SettingView from './components/SettingView';
 class Routes extends Component {
   render() {
@@ -10,6 +11,7 @@ class Routes extends Component {
         <Route exact path="/main" component={MainView} />
         <Route path="/about" component={About} />
         <Route path="/setting" component={SettingView} />
+        <Route path="/done" component={DoneView} />
         <Redirect path="/" to="/main" />
       </Switch>
     );

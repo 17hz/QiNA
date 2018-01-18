@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
-import logo from './logo.svg';
 import './App.scss';
+import 'animate.css/animate.min.css'
 import Routes from './Routes';
 class App extends Component {
   render() {
