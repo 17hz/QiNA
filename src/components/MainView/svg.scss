@@ -1,0 +1,69 @@
+.SvgGraphics {
+    .Lines {
+        position: absolute;
+        width: 18px;
+        left: 50%;
+        margin-left: -9px;
+        bottom: 95px;
+    }
+    .B-Cirs {
+        position: absolute;
+        width: 50px;
+        left: 50%;
+        margin-left: -25px;
+        bottom: 95px;
+    }
+    .Blue-Plus {
+        position: absolute;
+        left: 102px;
+        top: 46px;
+    }
+    .Red-Plus {
+        position: absolute;
+        left: 68px;
+        top: 76px;
+    }
+    .Green-Cir {
+        position: absolute;
+        left: 82px;
+        top: 61px;
+    }
+
+    .Red-Cir {
+        position: absolute;
+        left: 114px;
+        top: 69px;
+    }
+
+    .aniA,
+    .aniB,
+    .aniC,
+    .aniD,
+    .aniE {
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+
+    .aniA {
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+    }
+    .aniB {
+        -webkit-animation-duration: 1.6s;
+        animation-duration: 1.6s;
+    }
+    .aniC {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+    .aniD {
+        -webkit-animation-duration: 6s;
+        animation-duration: 6s;
+    }
+    .aniE {
+        -webkit-animation-duration: 4s;
+        animation-duration: 4s;
+    }
+}

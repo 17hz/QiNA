@@ -1,0 +1,39 @@
+@import "../style/_base.scss";
+.HighLight{
+  color: $highlight
+}
+.setting {
+  .settingTitle {
+    p {
+      font-size: 48px;
+    }
+    p.desc {
+      font-size: 24px;
+    }
+  }
+  .settingForm{
+    margin-top: 10px;
+    .ant-form-item{
+      margin-bottom: 5px;
+    }
+  }
+
+  .More{
+    margin:20px 0px 70px;
+    span{
+      cursor: pointer;
+    }
+  }
+  .settingFooter {
+    display: flex;
+    justify-content: space-between;
+    .p-btn {
+        background-color: $highlight;
+        border-color: $highlight
+    }
+    .d-btn {
+        color: $highlight;
+        border-color: $highlight;
+    }
+  }
+}

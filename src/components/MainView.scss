@@ -1,0 +1,36 @@
+#Uploader {
+  text-align: center;
+  height: 440px;
+  width: 440px;
+  display: block;
+  position: absolute;
+  top: 91px;
+  left: 50%;
+  margin-left: -220px;
+  background-image: url("./MainView/assets/CirBg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control {
+  text-align: center;
+  position: absolute;
+  bottom: 55px;
+  width: 440px;
+  left: 0;
+  .wide {
+    width: 128px;
+  }
+
+  .button {
+    height: 38px;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 4px;
+  }
+
+  .button.is-info.is-outlined {
+    background-color: #fff;
+  }
+}

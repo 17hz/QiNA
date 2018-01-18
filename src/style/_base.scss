@@ -1,0 +1,72 @@
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ {
+    cursor: default;
+    -webkit-user-select: none;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+p {
+      cursor: default;
+  -webkit-user-select: none;
+  margin: 0;
+}
+// flex
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.aitems-flex-start {
+    align-items: flex-start;
+}
+
+.aitems-center {
+    align-items: center;
+}
+
+.aitems-flex-end {
+    align-items: flex-end;
+}
+
+.aself-center {
+    align-self: center;
+}
+
+.aself-center {
+    align-self: flex-end;
+}
+
+.acontent-center {
+    align-content: center;
+}
+
+.acontent-flex-end {
+    align-content: flex-end;
+}
+
+.jcontent-center {
+    justify-content: center;
+}
+
+.jcontent-flex-end {
+    justify-content: flex-end;
+}
+
+.jcontent-flex-start {
+    justify-content: flex-start;
+}
+
+// flex-end
+$highlight:#516AD9 ;

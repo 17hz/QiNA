@@ -1,0 +1,28 @@
+
+@import "./style/comm.scss";
+@import '~antd/dist/antd.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: rgb(250, 250, 250);
+}
+
+body {
+  height: 676px;
+  width: 440px;
+  overflow: hidden;
+  padding: 40px 30px 30px;
+  color: #404040;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("./components/MainView/assets/CloudBg.png");
+}
+
+.app {
+  height: 100%;
+}
