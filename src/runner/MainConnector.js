@@ -6,6 +6,7 @@ const qn = require('qn');
 const {clipboard} = require('electron')
 
 const transliteration = require("transliteration")
+
 ipcMain.on("openLink", (event, arg) => {
   shell.openItem(arg);
 });
@@ -25,7 +26,6 @@ ipcMain.on("getKeys", (event,arg) => {
 })
 
 
-// 收到上傳文件請求
 ipcMain.on('upFile', (event, arg) => {
     let val = settings.get('Keys')
 
@@ -34,16 +34,16 @@ ipcMain.on('upFile', (event, arg) => {
       if (val == undefined) {
         returnMsg = {
           state: false,
-          err: '配置檔尚未設定'
+          err: '未配置'
         }
-        event.sender.send('qina', returnMsg) //向前端發送 Keys
+        event.sender.send('qina', returnMsg) 
         return false;
       }
   
       if (val.Access == null || val.Bucket == null || val.Domain == null || val.Secret == null) {
         returnMsg = {
           state: false,
-          err: '配置檔案不全'
+          err: '配置不全'
         }
         event.sender.send('qina', returnMsg)
         return false;
@@ -59,7 +59,7 @@ ipcMain.on('upFile', (event, arg) => {
         origin: val.Domain,
       });
   
-      console.log('qn 開始上傳');
+      console.log('qn 开始上传');
       client.uploadFile(filePath, {
         key: key
       }, function(err, ret) {
